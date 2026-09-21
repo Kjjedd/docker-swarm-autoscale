@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   nginx:
-    image: 165749212250.dkr.ecr.ap-northeast-2.amazonaws.com/web-nginx:latest
+    image: ${ECR_REGISTRY:-REPLACE_WITH_YOUR_ECR_REGISTRY}/web-nginx:${IMAGE_TAG:-latest}
     deploy:
       replicas: 2
       placement:
