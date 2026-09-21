@@ -1,0 +1,14 @@
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local and generated files
+.DS_Store
+*.log
+coverage/
+htmlcov/
